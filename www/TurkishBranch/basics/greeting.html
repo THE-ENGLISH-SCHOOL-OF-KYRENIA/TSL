@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+  <!-- Navigation page + different styles-->
+  <link rel="stylesheet" type="text/css" href="../../css/general_contour.css">
+  <link rel="stylesheet" type="text/css" href="../../css/menu.css"/>   
+   
+   <!--JQuery -->
+   <script src="../../js/jquery-3.1.0.min.js"></script>
+    
+   <!--Controlling navigation menu--> 
+   <script src="../../js/control_menu.js"></script>
+   <script src="../../js/swipe.js"></script>
+    
+   <!-- language -->
+   <script src = "../../js/change_lang.js"></script>
+    
+   <!-- js for controlling gestures -->
+   <script src="../../js/greeting.js"></script> 
+        
+</head>
+    
+<body>  
+             
+  <!--table for ;ayout-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+  
+  <!--upper row-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+  <!-- dashed button -->
+  <td> 
+    <center>
+    <button class="nav_btn" onclick="open_nav()">
+    <img src="../../images/dash_button.svg" width=30 height=35 alt="">
+    </button>
+    </center>        
+  </td>  
+  
+  <!--headline-->       
+  <td width=100%>
+    <center>                
+    <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TİD</b></font>    
+    </center>
+  </td>
+      
+  <td>
+    <center>
+    <img onclick="change_lang()" src="../../images/EnglishFlag.PNG" height="38px">
+    </center>
+  </td>      
+      
+      
+  </tr>
+            
+  <!--bottom row-->
+  <tr  style="height: 75%; width=100%">
+  <td colspan = 3 class="bottom">
+     <!-- table will be used for putting gestures into cells-->
+     <table width="100%" height="100%" style="text-align:center;" >
+      
+      <tr>
+        <td width="33%"><img src = "../../images/gestures/greeting/hi_1.jpg" height="130" width="100" class = "2gstr_sign"><center><font size="-1"><font class="order">1</font><br>Merhaba!</font></center></td> 
+        <td width="33%"><img src = "../../images/gestures/greeting/point_to.jpg" height="130" width="100" id="h_r_u"><center><font size="-1"><font class="3_order">1</font><br>Nasılsın?</font></center></td> 
+        <td width="33%"><img src = "../../images/gestures/greeting/self_point.jpg" height="130" width="100" id="fine"><center><font size="-1"><font class="3_order">1</font><br>Ben iyiyim.</font></center></td> 
+      </tr>
+       
+      <tr>
+        <td width="33%"><img src = "../../images/gestures/greeting/point_to.jpg" height="130" width="100" id="your_name"><center><font size="-1"><font class="3_order">1</font><br>Adın ne?</font></center></td> 
+        <td width="33%"><img src = "../../images/gestures/greeting/self_point.jpg" height="130" width="100" id="my_name"><center><font size="-1"><font class="3_order">1</font><br>Benim adım...</font></center></td>
+        <td width="33%"><img src = "../../images/gestures/greeting/c_u_1.jpg" height="130" width="100" class = "2gstr_sign"><center><font size="-1"><font class="order">1</font><br>Görüşürüz.</font></center></td> 
+      </tr>
+        
+      
+    </table>
+      
+      
+  </td>
+  </tr>          
+            
+  </table>
+        
+  <div class="navigation">
+    <ul>
+    <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none;"  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
+      <li><a href="../index_tur.html">Anasayfa</a></li>
+      <li><a href="../about_us.html">Hakkimizda</a></li>
+      <hr>
+      <li><a href="../alphabet.html">Alfabe</a></li>
+      <li><a href="../basics/basics.html">Temeller</a></li>
+      <li><a  href="../numbers/numbers.html">Sayılar</a></li>
+      <hr>
+      <li><a href="../../index.html" onclick = "langChange()">Language</a></li>
+    </ul>
+    </div>
+           
+</body>
+</html>

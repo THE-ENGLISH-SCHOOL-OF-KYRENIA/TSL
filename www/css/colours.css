@@ -1,0 +1,21 @@
+#colour_table{
+  width:100%;top:20%;position:fixed;
+  height:20%; 
+}
+
+#colour_table td{
+  width:20%;
+}
+
+.circle{
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.selected{
+  border-style: solid;
+  border-color:#00CCCC;
+}

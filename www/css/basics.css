@@ -1,0 +1,47 @@
+
+.board{
+    background-repeat: no-repeat;  background-size: 100% 100%;
+}
+
+.board img{
+  border-color: black;
+}
+
+.board img:hover{
+  border-color: red;  
+}
+
+#greeting{
+  position:fixed;
+  margin-left:10%;
+  margin-top:-12%;
+    
+}
+
+#shopping{
+  position:fixed;
+  margin-left:50%;
+  margin-top:10%;  
+}
+
+#colours{
+  position:fixed;
+  margin-left:60%;
+  margin-top:-100px;  
+}
+
+#weather{
+    margin-top:70px; 
+    position:fixed;
+    margin-left:30%;
+  
+}
+
+.title{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    font-size: 32px;
+    font-family: Papyrus;
+}

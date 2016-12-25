@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- Navigation page + different styles-->
+    <link rel="stylesheet" type="text/css" href="../css/general_contour.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/alphabet.css"/>               
+        
+    <!-- Importing JQuery -->
+    <script src="../js/jquery-3.1.0.min.js"></script>
+        
+    <!-- language -->
+    <script src = "../js/change_lang.js"></script>
+        
+    <!--Controlling navigation menu--> 
+    <script src="../js/control_menu.js"></script>
+    <script src="../js/swipe.js"></script>
+        
+    <!-- Javascript matching letters with gestures -->
+    <script src="../js/matching_alphabet.js"></script>  
+        
+    </head>
+
+<body>   
+        
+  <!--table for making-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+            
+  <!--upper row-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+      
+  <!-- dashed button -->
+  <td> 
+    <center>
+    <button class="nav_btn" onclick="open_nav()">
+    <img src="../images/dash_button.svg" width=30 height=35 alt="">
+    </button>
+    </center>        
+  </td>  
+      
+  <!--headline-->         
+  <td width=100%>
+    <center>                
+    <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TİD</b></font>    
+    </center>
+  </td>
+            
+  <td>
+    <center>
+    <img onclick="change_lang()" src="../images/EnglishFlag.PNG" height="38px">
+    </center>
+  </td> 
+            
+  </tr>
+            
+  <!--bottom row with letters-->
+  <tr  style="height: 75%; width=100%">
+  <td colspan = 3 class="bottom">
+    <!-- asking name -->
+    <div class = "letters"> 
+    <center>
+    <table width = 70%>
+    <b>
+      <tr>
+      <td ><a id="a_ltr" >A</a></td>
+      <td ><a >B</a></td>
+      <td ><a >C</a></td>
+      <td ><a >Ç</a></td>
+      <td ><a >D</a></td>
+      <td ><a >E</a></td>                    
+      </tr>
+                    
+      <tr>
+      <td ><a >F</a></td>
+      <td ><a >G</a></td>
+      <td ><a >Ğ</a></td>
+      <td ><a >H</a></td>
+      <td ><a >I</a></td>
+      <td ><a >İ</a></td>
+      </tr>
+                    
+      <tr>
+      <td ><a >J</a></td>
+      <td ><a >K</a></td>
+      <td ><a >L</a></td>
+      <td ><a >M</a></td>
+      <td ><a >N</a></td>
+      <td ><a >O</a></td>
+      </tr>
+                    
+      <tr>                
+      <td ><a >Ö</a></td>
+      <td ><a >P</a></td>
+      <td ><a >R</a></td>
+      <td ><a >S</a></td>
+      <td ><a >Ş</a></td>
+      <td ><a >T</a></td>                
+      </tr>
+                    
+      <tr>   
+      <td ><a >U</a></td>
+      <td ><a >Ü</a></td>
+      <td ><a >V</a></td>
+      <td ><a >Y</a></td>
+      <td ><a >Z</a></td>
+      <td ><a ></a></td>
+    </tr>
+    </b>
+    </table>
+                
+    <img id = "sign" src = "../images/gestures/A.jpg" height = "200px" width="200px" style="margin-top:10px;">
+    </center>
+    </div>
+              
+  </td>
+  </tr>          
+  </table>
+        
+  <div class="navigation">
+    <ul>
+    <!-- <li><a href="sign_in.html">Sign In</a></li> -->
+    <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none;"  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
+    <li><a  href="index_tur.html">Anasayfa</a></li>
+    <li><a href="about_us.html">Hakkimizda</a></li>
+    <hr>
+    <li><a class="active" href="alphabet.html">Alfabe</a></li>
+    <li><a href="basics/basics.html">Temeller</a></li>
+    <li><a href="numbers/numbers.html">Sayılar</a></li>
+    <hr>
+    <li><a href="../index.html" onclick = 'langChange()'>Dil Seçimi</a></li>
+    </ul>
+  </div>
+           
+</body>
+</html>

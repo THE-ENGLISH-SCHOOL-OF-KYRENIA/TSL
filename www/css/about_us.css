@@ -1,0 +1,38 @@
+#container {
+  margin-top:-10%;
+  width:100%;
+  text-align:center;
+    
+}
+#image_1{
+  float:left;
+  width:90px;
+  border-radius:50%;
+  margin-left: 10px;
+}
+
+#image_2{
+  
+  display: inline-block;
+  margin:0 auto;
+  width:90px;	
+  border-radius:50%;
+}
+
+#image_3{
+  float:right;
+  width:100px;	
+  border-radius:50%;
+  width:90px;
+  margin-right: 10px;
+ }
+
+#main_text{
+  width:100%	
+  position: absolute;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 15px;
+  font-family: sans-serif;
+}

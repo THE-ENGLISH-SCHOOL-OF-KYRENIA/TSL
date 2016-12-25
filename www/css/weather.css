@@ -1,0 +1,22 @@
+/*table with clockable images*/
+
+#image_table{
+  width:100%;top:20%;position:fixed;
+  height:20%; 
+}
+
+.circle{
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+}
+
+.selected{
+  border-style: solid;
+  border-color:#00CCCC;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;   
+}

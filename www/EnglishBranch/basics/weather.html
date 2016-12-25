@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+  <!-- Navigation page + different styles-->
+  <link rel="stylesheet" type="text/css" href="../../css/general_contour.css">
+  <link rel="stylesheet" type="text/css" href="../../css/menu.css"/>   
+  <link rel="stylesheet" type="text/css" href="../../css/weather.css">
+   <!--Controlling navigation menu--> 
+   <script src="../../js/control_menu.js"></script>
+   <script src="../../js/swipe.js"></script>    
+    
+   <!-- language -->
+   <script src = "../../js/change_lang.js"></script>
+    
+   <!-- Jquery-->
+   <script src="../../js/jquery-3.1.0.min.js"></script>
+    
+   <!--Javascript for showing weather gesture-->
+   <script src = "../../js/weather.js"></script>
+        
+</head>
+    
+<body>  
+             
+  <!--table for ;ayout-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+  
+  <!--upper row-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+  <!-- dashed button -->
+  <td> 
+    <center>
+    <button class="nav_btn" onclick="open_nav()">
+    <img src="../../images/dash_button.svg" width=30 height=35 alt="">
+    </button>
+    </center>        
+  </td>  
+  
+  <!--headline-->       
+  <td width=100%>
+    <center>                
+    <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TSL</b></font>    
+    </center>
+  </td>
+      
+  <td>
+    <center>
+    <img onclick="change_lang()" src="../../images/TurkishFlag.PNG" height="38px">
+    </center>
+  </td>      
+      
+      
+  </tr>
+            
+  <!--bottom row-->
+  <tr  style="height: 75%; width=100%">
+  <td colspan = 3 class="bottom">
+      
+    <table id="image_table">
+      
+      <tr>
+      <td><center><img src="../../images/basics/weather/hot.jpg" height="60" width="80" id="default" class="clip"></center></td>
+      <td><center><img src="../../images/basics/weather/cold.jpg" height="60" width="80" class="clip"></center></td>
+      <td><center><img src="../../images/basics/weather/rainy.jpg" height="60" width="80" class="clip"></center></td>
+      </tr>
+        
+      <tr>
+      <td><center><img src="../../images/basics/weather/snowy.jpg" height="60" width="80" class="clip"></center></td>
+      <td><center><img src="../../images/basics/weather/sky.jpg" height="60" width="80" class="clip"></center></td>
+      <td><center><img src="../../images/basics/weather/love.png" class="clip" height="60" width="80" ></center></td>
+      </tr>
+        
+    </table>
+      
+    <br><br><br><br><br><br><br><br><br>
+    <center><img id = "weather_gesture" src="../../images/gestures/weather/hot_1.jpg" width="180" height="180"></center>
+      
+  </td>
+  </tr>          
+            
+  </table>
+        
+  <div class="navigation">
+    <ul>
+    <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none;"  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
+      <li><a href="../index_eng.html">Home</a></li>
+      <li><a href="../about_us.html">About Us</a></li>
+      <hr>
+      <li><a href="../alphabet.html">Alphabet</a></li>
+      <li><a href="../basics/basics.html">Basics</a></li>
+      <li><a href="../numbers/numbers.html">Numbers</a></li>
+      <hr>
+      <li><a href="../../index.html" onclick = "langChange()">Language</a></li>
+    </ul>
+    </div>
+           
+</body>
+</html>

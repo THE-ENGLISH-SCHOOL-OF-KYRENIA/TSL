@@ -1,0 +1,48 @@
+/* This css file contains css styles necessary for the numbers related pages*/
+
+.nums a{
+    margin-left:15px;
+    width:20%;
+    height:30px;
+    line-height:35px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000000;
+    background-color:#00CC00;
+    position:relative;
+    display:inline-block;
+}
+
+.nums a.active{
+  color:yellow; 
+  font-weight: bold;
+}
+
+.nums a:after{
+    position:absolute;
+    right:-20px;
+    content:" ";
+    width: 0px;
+    height: 0px;
+    border-width: 14px 0 15px 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00CC00;
+}
+.nums a:hover{
+    background-color:red;
+}
+.nums a:hover:after{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 14px 0 15px 20px;
+    border-color: transparent transparent transparent #ff0000;
+}
+
+
+
+    
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  
+  <!-- navigation + play button + teaching numbers relates css files-->
+  <link rel="stylesheet" type="text/css" href="../../css/general_contour.css">
+  <link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="../../css/number_navigation.css">  
+  <link rel="stylesheet" type="text/css" href="../../css/teaching_numbers.css">  
+  <style>
+  .wait_click{pointer-events: none;}
+  </style>
+    
+  <!--Controlling navigation menu + jquery--> 
+  <script src = "../../js/jquery-3.1.0.min.js"></script>
+  <script src="../../js/control_menu.js"></script>
+  <script src="../../js/swipe.js"></script>
+  
+  <!-- language -->
+  <script src = "../../js/change_lang.js"></script>
+
+  <!-- animation of the numbers -->
+  <script src="../../js/numbers_1.js"></script>
+        
+  <!--Javascript teaching numbers in sign language-->
+  <!--Javascript teaching numbers in sign language-->
+  <script>    
+      
+    $( document ).ready(function() {
+      number = 0
+        
+      $( "#l_arr" ).click(function() {
+        if(number != 0){
+          number -= 1; 
+        }
+      });
+        
+      $("#r_arr").click(function(){
+        if(number<10){
+        number += 1;  
+        }
+      });
+        
+      $(".teaching_nums").click(function() {
+        $(".digits").text(number);
+                
+      });
+        
+    });
+
+  </script>
+        
+</head>
+    
+<body>   
+  <!--table for general layout-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+  
+  <!--upper row-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+      
+  <!-- dashed button -->
+  <td> 
+    <button class="nav_btn" onclick="open_nav()">
+    <img src="../../images/dash_button.svg"  width=30 height=35 alt="">
+    </button>
+  </td> 
+      
+  <!--headline-->
+  <td width=100%>
+      <center><font  style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TİD</b></font></center>
+  </td>
+      
+  <td>
+    <center>
+    <img onclick="change_lang()" src="../../images/EnglishFlag.PNG" height="38px">
+    </center>
+  </td> 
+  
+  </tr>
+            
+  <!--bottom row-->
+  <tr style="height: 75%; width=100%">
+  <td valign="top" colspan = 3 class="bottom"> 
+    <!-- navigation in numbers sectionr --> 
+      <table class = "nums" style="width:100%">
+          <tr>
+          <td bgcolor="green">
+      <center>
+     <a style="margin-left:-10px;" href="" class="active">0-10</a>
+     <a href="numbers2.html">10-100</a>
+     <a href="choose_number.html">???</a>
+      </center>
+              </td>
+     </tr>
+      </table>
+        
+      
+     <!--buttons for letters control-->
+      
+      <div class = "teaching_nums">
+        <center>
+        <img id = "l_arr" src="../../images/left_arrow.png" height="50px" width="50px">
+        &nbsp&nbsp&nbsp
+        <img id = "r_arr" src="../../images/right_arrow.png" height="50px" width="50px">
+        </center>
+      </div> 
+        
+        <table class="number_table" >
+      <tr>
+        <td style = "width:33.3%;"><div class="digits">0</div></td>
+        <td style = "width:33.3%;"><div class="equality">=</div></td>
+        <td style = "width:33.3%;"><div class="gestures"><img src="../../images/gestures/O.jpg" width="130px" height="130px"></div></td>
+      </tr>
+      </table>  
+      
+          
+  </td>
+  </tr>          
+  </table>
+    
+  <!---------------------------------------------------------------------------------------------------------------------------->      
+  <div class="navigation">
+    <ul>
+    <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none;"  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
+      <li><a href="../index_tur.html">Anasayfa</a></li>
+      <li><a href="../about_us.html">Hakkimizda</a></li>
+      <hr>
+      <li><a href="../alphabet.html">Alfabe</a></li>
+      <li><a href="../basics/basics.html">Temeller</a></li>
+      <li><a class="active" href="">Sayılar</a></li>
+      <hr>
+      <li><a href="../../index.html" onclick = 'langChange()'>Dil Seçimi</a></li>
+            
+    </ul>
+    </div>
+           
+</body>
+</html>

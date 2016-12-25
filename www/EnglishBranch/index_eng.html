@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>TSL Tutor</title>
+    
+  <link rel="stylesheet" type="text/css" href="../css/menu.css"/><!-- Navigation menu-->
+  <link rel="stylesheet" type="text/css" href="../css/eng_tur_main_pages.css"><!--special styles for main pages-->
+  <link rel="stylesheet" type="text/css" href="../css/general_contour.css"> 
+  
+  <!--Jquery-->
+  <script src="../js/jquery-3.1.0.min.js"></script>
+  
+  <!-- Javascript checking if name is known or not-->
+  <script src = "../js/user_name.js"></script>
+    
+  <!--javascript which shows the name using sign language if user enters the app first time -->   
+  <script src = "../js/name_in_sign.js"></script>         
+    
+  <!-- Javascript controlling navigation menu--> 
+  <script src="../js/control_menu.js"></script>
+    
+  <!-- language  preference button in the right top corner-->
+  <script src = "../js/change_lang.js"></script>
+        
+  <!-- javascript that allows to access index.html in order to change language preferences-->
+    <script>
+    function langChange(){
+      localStorage.setItem('lang', 0);
+    }
+    </script>   
+</head>
+    
+<body>   
+    
+  <!--table for layout-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+  
+  <!--upper row-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+  <!-- dashed button -->
+  <td>     
+    <center>
+    <button class="nav_btn" onclick="open_nav()">
+    <img src="../images/dash_button.svg" width=30 height=35 alt="" >
+    </button>
+    </center>       
+  </td>  
+  
+  <!--headline-->         
+  <td width=100%>
+    <center>                
+    <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TSL</b></font>  
+    </center>
+  </td>
+      
+  <!--language preferences-->         
+  <td width=40px>
+    <center>
+    <img onclick="change_lang()" src="../images/TurkishFlag.PNG" height="38px">
+    </center>
+  </td>      
+      
+            
+  </tr>     
+      
+  <!--bottom row-->
+  <tr  style="height: 75%; width=100%">
+  <td colspan = 3 class="bottom" >
+            
+  <!-- asking name -->
+  <div class = "ask_name"> 
+    <center>
+    <div id = "text_in_shape">
+      <font color = "#ffffff" size="+2">Your name?</font>
+    </div>  
+    <input type="text" id="name" size = "18" style = "font-size:17px; margin-left:4px; " onchange = "show_name(this.value)"/>
+    <br><br>
+    <img id = "sign" src = "../images/blank.JPG" height = "200px" width="200px">
+    </center>
+  </div>
+   
+  <!--here the user chooses what exactly he/she wants to study-->
+  <div class = "rubric_choice">
+    <b><p id = "greeting" style="font-size:120%;" onclick = "new_name()"></p></b>
+    <div id = "buttons">
+      <a href="alphabet.html" class="btn green"><img src="../images/main_pages/abc.png" height="30" width="30" style=" background-position: -96px -112px;
+    float: left;"><font style="margin-right:30px;">Alphabet</font></a>
+      <br>
+      <a href="basics/basics.html" class="btn green"><img src="../images/main_pages/basics.png" height="30" width="40" style=" background-position: -96px -112px;
+            float: left;"><font style="margin-right:30px;">Basics</font></a>
+      <br>
+      <a href="numbers/numbers.html" class="btn green"><img src="../images/main_pages/numbers.png" height="30" width="30" style=" background-position: -96px -112px;
+            float: left;"><font style="margin-right:30px;">Numbers</font></a>
+    </div>
+  </div>
+            
+  </td>
+  </tr>          
+            
+  </table>
+    
+  <!-- Navigation menu -->
+  <div class="navigation">
+  <ul>
+    <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none; "  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
+    <li><a class="active" href="index_eng.html">Home</a></li>
+    <li><a href="about_us.html">About Us</a></li>
+    <hr>
+    <li><a href="alphabet.html">Alphabet</a></li>
+    <li><a href="basics/basics.html">Basics</a></li>
+    <li><a href="numbers/numbers.html">Numbers</a></li>
+    <hr>
+    <li><a href="../index.html" onclick = "langChange()">Language</a></li>
+  </ul>
+  </div>  
+        
+</body>
+</html>

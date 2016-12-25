@@ -1,0 +1,43 @@
+/*This page contains styles used in all pages of the app*/
+
+
+/*button in the top left corner of every page*/
+.nav_btn {
+  background-color: inherit;            
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+/*navitation menu */
+.navigation{
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: fixed; 
+  top: 0; bottom: 0; left: 0; 
+}
+
+  
+/*this bit specifically helps the tables in the numbers sections as it makes them stick to the top*/
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/*main table where all elements are located*/
+.layout_table{
+  height:100%;  
+  width:auto; 
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
+}
+
+/*this is the main part of every page of the app*/
+.layout_table .bottom{
+  background-color: #FFFF99;
+}
+
+

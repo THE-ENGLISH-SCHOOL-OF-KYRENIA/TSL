@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        
+  
+  <link rel="stylesheet" type="text/css" href="css/general_contour.css"> <!--general styles-->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>  <!-- Navigation page-->
+        
+  <!-- divs for locating the flags -->
+  <style>
+    .turFlag{float: left;width: 50%;}             
+    .engFlag{float: left;width: 50%;}
+  </style>
+        
+  <!--javascript to save the language preferences in the local storage and navigate users according to their language preferences-->
+  <script>
+  //sending user AUTOMATICALLY to another page if he/she has chosen a preferable language before
+  (function() {  
+    var lang = localStorage.getItem('lang');
+    if (lang == 1){window.location.href = "TurkishBranch/index_tur.html";} //if preferrable language is Turkish then send there        
+    else if (lang == 2){window.location.href = "EnglishBranch/index_eng.html";}      
+   })();    
+      
+  //sending user to another page when HE CHOOSES his prefered language      
+  function languageChoice(lang){   
+    if(lang == 1){localStorage.setItem('lang', 1);window.location.href = "TurkishBranch/index_tur.html";}
+    else if(lang == 2){localStorage.setItem('lang', 2);window.location.href = "EnglishBranch/index_eng.html";}   
+  }
+  </script> 
+    
+  <!--Navigation page doesn't work if the user doesn't choose his language-->
+  <script>
+  function open_nav(){                 
+    document.getElementById("explnt").innerHTML = "<b><font color='red'>Please, choose your language.</font></b>"
+  }        
+  </script> 
+        
+</head>
+    
+<body>  
+  <!--table for basic layout, contains two rows only-->
+  <table class = "layout_table" cellspacing="0" cellpadding="0">
+      
+  <!--upper row, has two cols-->
+  <tr  style="background-color:#00CC00; height: 8%; width=100%">
+    <!-- dashed button --> 
+    <td>       
+      <center>
+      <button class="nav_btn" onclick="open_nav()"><img src="images/dash_button.svg" width=30 height=35 alt=""></button>
+      </center>         
+    </td> 
+      
+     <!--headline-->  
+     <td width=100%>
+       <center>                
+       <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TSL&nbsp&nbsp&nbsp</b></font>    
+       </center>
+      </td>
+        
+      </tr>
+            
+      <!--bottom row, has one col and two flags-->
+      <tr  style="height: 75%; width=100%">
+      <td colspan = 2 class="bottom">
+        <!-- tell users to choose language -->
+        <center><p id="explnt"></p></center>
+        <!-- Turkish Flag -->
+        <div class = "turFlag"> 
+          <center><img src = "images/TurkishFlag.PNG" width = "56%" height="25%" onclick = "languageChoice(1)"></center>
+        </div>
+        <!-- English Flag -->
+        <div class = "engFlag">  
+          <center><img src = "images/EnglishFlag.PNG" width = "56%" height="25%" onclick = "languageChoice(2)"></center>
+        </div>
+              
+      </td>
+      </tr>          
+            
+      </table>
+        
+</body>
+</html>

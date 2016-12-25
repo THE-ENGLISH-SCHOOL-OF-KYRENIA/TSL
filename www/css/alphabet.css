@@ -1,0 +1,17 @@
+.letters{
+  width: 100%;
+  height: 100%;
+  top: 20%;  
+  text-align: center;
+  position: fixed;
+  font-size: 120%;        
+}
+             
+td{
+  text-align: center;
+}
+             
+/* css for letters */
+.inactive {color:blue; text-decoration: underline}
+.selected {color:red;}
+.wait_click{pointer-events: none;}
