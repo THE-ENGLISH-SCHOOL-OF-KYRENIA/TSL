@@ -61,7 +61,7 @@ function show_name(name){
 			 
 			  setTimeout(function(){          
                   $("#sign").attr("src","../images/blank.jpg")          
-                }, 1000); 
+                }, 3500); 
 			   
               // end of loop
               if(i==(len-1)){
