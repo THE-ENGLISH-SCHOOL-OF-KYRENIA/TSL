@@ -58,7 +58,11 @@ function show_name(name){
               else{
                 $("#sign").attr("src","../images/gestures/" + name[i].toUpperCase() +".jpg"); 
               }                   
-                        
+			 
+			  setTimeout(function(){          
+                  $("#sign").attr("src","../images/blank.jpg")          
+                }, 1000); 
+			   
               // end of loop
               if(i==(len-1)){
                 setTimeout(function(){
