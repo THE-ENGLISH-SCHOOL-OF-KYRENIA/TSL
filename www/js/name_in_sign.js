@@ -60,7 +60,7 @@ function show_name(name){
               }                   
 			 
 			  setTimeout(function(){          
-                  $("#sign").attr("src","../images/blank.jpg")          
+                  $("#sign").attr("src","../images/blank.JPG")          
                 }, 3500); 
 			   
               // end of loop

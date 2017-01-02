@@ -3,37 +3,20 @@
     background-repeat: no-repeat;  background-size: 100% 100%;
 }
 
-.board img{
-  border-color: black;
-}
-
-.board img:hover{
-  border-color: red;  
-}
-
 #greeting{
   position:fixed;
-  margin-left:10%;
-  margin-top:-12%;
+  margin-top:-120px;
     
-}
-
-#shopping{
-  position:fixed;
-  margin-left:50%;
-  margin-top:10%;  
 }
 
 #colours{
   position:fixed;
-  margin-left:60%;
-  margin-top:-100px;  
+  margin-top:-130px;  
 }
 
 #weather{
-    margin-top:70px; 
+    margin-top:50px; 
     position:fixed;
-    margin-left:30%;
   
 }
 
