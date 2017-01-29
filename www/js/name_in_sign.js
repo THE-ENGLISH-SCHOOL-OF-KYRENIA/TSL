@@ -1,11 +1,15 @@
 //Javascript showing name in sign language
 function show_name(name){
+	
       for (var i = 0, len = name.length; i < len; i++) {
+		  
+		 localStorage.setItem('name', name);
+		  
         //these three lines below cause every iteration to run with a delay which 2.5 seconds in this case
         window.setTimeout(
           (function (i){ 
             return function() {
-                
+			  
               if(name[i].toUpperCase() == "Ö"  ){ 
                 $("#sign").attr("src","../images/gestures/O-1.jpg")
                 setTimeout(function(){            
@@ -66,13 +70,24 @@ function show_name(name){
               // end of loop
               if(i==(len-1)){
                 setTimeout(function(){
-                  localStorage.setItem('name', name);
                   location.reload();
                 },2000);
               }
-                                
-                                
+                                                 
             }
         })(i),i * 4000)
     }
 }
+
+function bored_user(){
+	 setTimeout(function(){
+		 
+	  $( "#sign" ).dblclick(function() {
+       location.reload();	
+      });
+	    
+	},2000);
+	
+}
+
+

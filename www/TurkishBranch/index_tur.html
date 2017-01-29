@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-  <title>TiD ÖĞRETMEN</title>
-  
-  <!-- Navigation page + different styles-->
-  <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
-  <link rel="stylesheet" type = "text/css" href = "../css/eng_tur_main_pages.css">
-  <link rel="stylesheet" type="text/css" href="../css/general_contour.css">
+  <title>TSL Tutor</title>
+    
+  <link rel="stylesheet" type="text/css" href="../css/menu.css"/><!-- Navigation menu-->
+  <link rel="stylesheet" type="text/css" href="../css/eng_tur_main_pages.css"><!--special styles for main pages-->
+  <link rel="stylesheet" type="text/css" href="../css/general_contour.css"> 
   
   <!--Jquery-->
   <script src="../js/jquery-3.1.0.min.js"></script>
@@ -16,38 +15,43 @@
   <!-- Javascript checking if name is known or not-->
   <script src = "../js/user_name.js"></script>
     
-  <!--javascript which shows the name using sign language -->   
-  <script src = "../js/name_in_sign.js"></script> 
-        
-  <!--Controlling the navigation page -->
+  <!--javascript which shows the name using sign language if user enters the app first time -->   
+  <script src = "../js/name_in_sign.js"></script>         
+    
+  <!-- Javascript controlling navigation menu--> 
   <script src="../js/control_menu.js"></script>
     
   <!-- language  preference button in the right top corner-->
   <script src = "../js/change_lang.js"></script>
         
-  
-       
+  <!-- javascript that allows to access index.html in order to change language preferences-->
+    <script>
+    function langChange(){
+      localStorage.setItem('lang', 0);
+    }
+    </script>   
 </head>
-<body>
-            
+    
+<body>   
+    
   <!--table for layout-->
   <table class = "layout_table" cellspacing="0" cellpadding="0">
-            
+  
   <!--upper row-->
   <tr  style="background-color:#00CC00; height: 8%; width=100%">
-      
   <!-- dashed button -->
-  <td> 
-    <center>
+  <td>     
+    <div align="left">
     <button class="nav_btn" onclick="open_nav()">
-    <img src="../images/dash_button.svg"  width=30 height=35 alt="">
+    <img src="../images/dash_button.svg" width=30 height=35 alt="" >
     </button>
-    </center>        
-            
+    </div>
+          
   </td>  
-  <!--headline-->
+  
+  <!--headline-->         
   <td width=100%>
-    <center>                
+    <center>             
     <font style ="color: rgba(0,0,0,0.6); text-shadow: 2px 2px 3px rgba(255,255,255,0.1);" size="+3" face="times"><b>TİD</b></font>  
     </center>
   </td>
@@ -55,31 +59,32 @@
   <!--language preferences-->         
   <td>
     <center>
-    <a href="../EnglishBranch/index_eng.html">
-    <img src="../images/EnglishFlag.PNG" height="38px">
-    </a>
+    <img onclick="change_lang()" src="../images/EnglishFlag.PNG" height="38px">
     </center>
-  </td>  
+  </td>      
       
-  </tr>
             
+  </tr>     
+      
   <!--bottom row-->
   <tr  style="height: 75%; width=100%">
-  <td colspan = 3 class="bottom">
-    <!--hypnosis image -->
-    <div class = "ask_name"> 
-      <center>
-      <div id = "text_in_shape">
-        <font color = "#ffffff" size="+2">Adınız?</font>
-      </div>
-      <input type="text" id="name" size = "18" style = " font-size:17px " onchange = "show_name(this.value)"/>
-      <br><br>
-      <img id = "sign" src = "../images/blank.JPG" height = "200px" width="200px">
-      </center>
-    </div>
-                
-    <div class = "rubric_choice">
-       <br>
+  <td colspan = 3 class="bottom" >
+            
+  <!-- asking name -->
+  <div class = "ask_name"> 
+    <center>
+    <div id = "text_in_shape">
+      <font color = "#ffffff" size="+2">Adınız?</font>
+    </div>  
+    <input type="text" id="name" size = "18" style = "font-size:17px; margin-left:4px; " onchange = "show_name(this.value)"/>
+    <br><br>
+    <img id = "sign" src = "../images/blank.JPG" height = "200px" width="200px" onclick=" bored_user(); ">
+    </center>
+  </div>
+   
+  <!--here the user chooses what exactly he/she wants to study-->
+  <div class = "rubric_choice">
+    <br>
     <b><font id = "greeting" style="font-size:120%;" onclick = "new_name()"></font></b><br><br>
     <hr>
       
@@ -95,28 +100,34 @@
       </tr>
     </table> 
     </center>
-        
-    </div>
-              
+
+  </div>
+    
+
+      
+ 
+      
+  
+            
   </td>
   </tr>          
             
   </table>
-        
-  <div class="navigation">
+    
+  <!-- Navigation menu -->
+ <div class="navigation">
     <ul>
     <div align="right" style=" top:0%; "><button onclick="close_nav()" style="padding: 0;border: none;background: none;"  ><font size="+2" onclick="close_nav()" ><b>X&nbsp</b></font> </button></div>
-      <li><a class="active" href="index_tur.html">Anasayfa</a></li>
-      <li><a href="about_us.html">Hakkimizda</a></li>
-      <hr>
-      <li><a href="alphabet.html">Alfabe</a></li>
-      <li><a href="basics/basics.html">Temeller</a></li>
-      <li><a href="numbers/numbers.html">Sayılar</a></li>
-      <hr>
-      <li><a href="../index.html" onclick = 'langChange()'>Dil Seçimi</a></li>
-            
+    <li><a class="active" href="index_tur.html">Anasayfa</a></li>
+    <li><a href="about_us.html">Hakkimizda</a></li>
+    <hr>
+    <li><a href="alphabet.html">Alfabe</a></li>
+    <li><a href="basics/basics.html">Temeller</a></li>
+    <li><a href="numbers/numbers.html">Sayılar</a></li>
+    <hr>
+    <li><a href="../index.html" onclick = 'langChange()'>Dil Seçimi</a></li>
     </ul>
-    </div>
-           
+  </div> 
+        
 </body>
 </html>
