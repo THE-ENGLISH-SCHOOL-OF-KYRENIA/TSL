@@ -1,0 +1,11 @@
+/*This is a css file containing the style for the direction page */
+
+#main_text{
+  overflow-y: auto;
+  height:40%;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  width:100%;
+}

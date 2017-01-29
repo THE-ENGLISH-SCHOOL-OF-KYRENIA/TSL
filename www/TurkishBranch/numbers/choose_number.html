@@ -57,11 +57,11 @@
   
   </tr>
             
-  <!--bottom row-->
+ <!--bottom row-->
   <tr style="height: 75%; width=100%">
   <td valign="top" colspan = 3 class="bottom"> 
-    <!-- navigation in numbers sectionr --> 
-      <table class = "nums" style="width:100%">
+    <!-- navigation in numbers section --> 
+      <table class = "nums"  style="width:100%;border: none;">
           <tr>
           <td bgcolor="green">
       <center>
@@ -73,31 +73,15 @@
      </tr>
       </table>
       
-      <table class="choose_number" >
-      <tr height="33%" id="click_down">
-        <td><font color="green" size="+2" class="huns_up">&#x25B2</font></td>
-        <td><font color="green" size="+2" class="tens_up">&#x25B2</font></td>
-        <td><font color="green" size="+2" class="ones_up">&#x25B2</font></td>
-        <td></td>
-        <td></td>
-      </tr>
+     <table class="choose_number" >
          
       <tr>
-        <td  class="number_block"><div class="huns">0</div></td>
-        <td class="number_block" ><div class="tens">0</div></td>
-        <td  class="number_block"><div class="ones">0</div></td>
-          <td ><center><button id="learn_btn" style="color:green;margin-left:5px"><font size="+3" style="font-weight:bold;" >=</font></button></center></td>
-        <td    style="width: 130px;"><img src="../../images/gestures/O.jpg" id="gesture" height="130px" width="130px" rowspan="3"></td>
+        <td width="33%"><center><input class="textbox" value="0" type="number" min="0" max="9" maxlength="1" id="huns"><input value="0" class="textbox" type="number" min="0" max="9" maxlength="1" id="tens"><input value="0" class="textbox" type="number" min="0" max="9" maxlength="1" id="ones"></center></td>
+        <td width="33%"><center><button  id="learn_btn" style="color:green;"><font size="+3" style="font-weight:bold;" >=</font></button></center></td>
+        <td width="33%"><center><img src="../../images/gestures/O.jpg" id="gesture" height="143px" width="130px" ></center></td>
       </tr>
-         
-      <tr id="click_up" class="num_down">
-        <td><font color="green" size="+2" class="huns_down">&#x25BC</font></td>
-        <td><font color="green" size="+2" class="tens_down">&#x25BC</font></td>
-        <td><font color="green" size="+2" class="ones_down">&#x25BC</font></td>
-        <td></td>
-        <td></td>
-      </tr>   
-      </table>             
+          
+      </table>     
      
       
            
