@@ -13,6 +13,9 @@ $(document).ready(function(){
         jQuery(this).attr('src', jQuery(this).attr('src').replace("2", "1"));
         $(".order").html("1");
       }
+	  else{
+		  continue
+	  }
     });
     first_gesture = 1 - first_gesture; 
 }
