@@ -1,5 +1,7 @@
 //This javascript code is aimed fo eng/tur main pages and it deals with the name of the user
 
+//add another registration requirement, the user should give us their email
+
 //this bit checks if name of the user is known
   $(document).ready(function(){
     var u_name =localStorage.getItem('name');
