@@ -27,6 +27,15 @@
   margin-right: 10px;
  }
 
+#image_4{
+  width:100px;	
+  border-radius:50%;
+  width:90px;
+  margin-right: 10px;
+   float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+ }
+
 #main_text{
   width:100%	
   position: absolute;

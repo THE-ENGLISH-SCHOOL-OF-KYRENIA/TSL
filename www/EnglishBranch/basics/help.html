@@ -9,12 +9,18 @@
   <link rel="stylesheet" type="text/css" href="../../css/menu.css"/>
   <link rel="stylesheet" type="text/css" href="../../css/directions.css">
    
+  <!--JQuery -->
+  <script src="../../js/jquery-3.1.0.min.js"></script>
+    
    <!--Controlling navigation menu--> 
    <script src="../../js/control_menu.js"></script>
    <script src="../../js/swipe.js"></script>
     
    <!-- language -->
    <script src = "../../js/change_lang.js"></script>
+    
+   <!-- js for controlling gestures -->
+   <script src="../../js/help.js"></script> 
         
 </head>
     
@@ -43,7 +49,7 @@
       
   <td>
     <center>
-    <img onclick="change_lang()" src="../../images/EnglishFlag.PNG" height="38px">
+    <img onclick="change_lang()" src="../../images/TurkishFlag.PNG" height="38px">
     </center>
   </td>      
      
@@ -53,16 +59,29 @@
   <!--bottom row-->
   <tr  style="height: 75%; width=100%">
   <td colspan = 3 class="bottom">
-    <div id="main_text"> <!--this div is basically for enablig scroll bar option-->
+    <!-- Table to locate the imageholder, arrows and text properly -->
+    <table width="100%" height="100%" style="text-align:center;" >
+    <tr>
+      <!--Left arrow-->
+      <td><img src = "../../images/left_arrow.png" height="70" width="40" id="leftArrow">
+      </td> 
+          
+      <!--gesture and text-->
+      <td>
+      <img src="../../images/gestures/help/ambulance1.png" height="200" width="200" style="position: relative;" id = "imageHolder">
+      <div id="order" style="position: absolute; top: 37%; left: 33%;"> 
+        1
+      </div>
+      <br><font size="3" style="font-weight: bold;" id="explanation" >Ambulance</font>
+      </td>
       
-      <table width=100% height=100%>
-      <tr>
-       
-      </tr>
-      </table>
-      
-      
-    </div>
+      <!--Right arrow-->
+      <td><img src = "../../images/right_arrow.png" height="70" width="40" id="rightArrow">
+      </td>
+        
+    </tr>
+    </table>
+    <!--------------------------------------> 
   </td>
   </tr>          
             

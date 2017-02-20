@@ -31,7 +31,7 @@ $(document).ready(function(){
     //Gesture - hello
     if(imageIndex==1){
       //text with explanation
-      $("#explanation").html("Hello!");
+      $("#explanation").html("Merhaba!");
         
       //show the gesture by swapping the images
       if(link.indexOf("2")>0){
@@ -62,7 +62,7 @@ $(document).ready(function(){
          $("#imageHolder").attr("src", "../../images/gestures/greeting/point_to.jpg"); 
          $("#order").html(1);
       }
-      $("#explanation").html("How are you?");
+      $("#explanation").html("Nasılsın?");
     }
      
     //Gesture - I am fine
@@ -82,7 +82,7 @@ $(document).ready(function(){
          $("#imageHolder").attr("src", "../../images/gestures/greeting/self_point.jpg"); 
          $("#order").html(1);
       }
-      $("#explanation").html("I am fine");
+      $("#explanation").html("Ben iyiyim.");
         
     }
       
@@ -103,7 +103,7 @@ $(document).ready(function(){
         $("#imageHolder").attr("src", "../../images/gestures/greeting/point_to.jpg"); 
         $("#order").html(1);
       }
-        $("#explanation").html("What is your name?");
+        $("#explanation").html("Adın ne?");
     }
       
     //Gesture - My name is 
@@ -123,7 +123,7 @@ $(document).ready(function(){
         $("#imageHolder").attr("src", "../../images/gestures/greeting/self_point.jpg"); 
         $("#order").html(1);
       } 
-      $("#explanation").html("My name is ...");
+      $("#explanation").html("Benim adım...");
     }
     else if(imageIndex==6){
       if(link.indexOf("2")>0){
@@ -134,7 +134,7 @@ $(document).ready(function(){
         $("#imageHolder").attr("src", "../../images/gestures/greeting/c_u_2.jpg");
         $("#order").html(2);
       }
-        $("#explanation").html("See you!");
+        $("#explanation").html("Görüşürüz!");
     }
     
     

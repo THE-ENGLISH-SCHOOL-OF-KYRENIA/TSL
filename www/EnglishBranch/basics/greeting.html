@@ -60,31 +60,28 @@
   <tr  style="height: 75%; width=100%">
   <td colspan = 3 class="bottom">
     
-    <!-- table will be used for putting gestures into cells-->
-     <table width="100%" height="100%" style="text-align:center;" >
+    <!-- Table to locate the imageholder, arrows and text properly -->
+    <table width="100%" height="100%" style="text-align:center;" >
+    <tr>
+      <!--Left arrow-->
+      <td width="20%"><img src = "../../images/left_arrow.png" height="70" width="40" id="leftArrow">
+      </td> 
+          
+      <!--gesture and text-->
+      <td  >
+      <img src="../../images/gestures/greeting/hi_1.jpg" height="200" width="70%" style="position: relative;" id = "imageHolder">
+      <div id="order" style="position: absolute; top: 37%; left: 33%;"> 
+        1
+      </div>
+      <br><font size="3" style="font-weight: bold;" id="explanation" >Hello!</font>
+      </td>
       
-      <tr>
-		<td width="33%"><img src = "../../images/left_arrow.png" height="100" width="70" class = "2gstr_sign"></td> 
-        <td width="33%"><img src = "../../images/gestures/greeting/hi_1.jpg" height="300" width="230.769230769230" class = "2gstr_sign"><font size="100"><font class="order"></font><br>Hello!</font></center></td>
-        <td width="33%"><img src = "../../images/right_arrow.png" height="100" width="70" class = "2gstr_sign"></td> 
-		<!---<td width="33%"><img src = "../../images/gestures/greeting/point_to.jpg" height="130" width="100" id="h_r_u"><center><font size="-1"><font class="3_order">1</font><br>How are you?</font></center></td> 
-        <td width="33%"><img src = "../../images/gestures/greeting/self_point.jpg" height="130" width="100" id="fine"><center><font size="-1"><font class="3_order">1</font><br>I am fine.</font></center></td> 
-      </tr>
-       
-      <tr>
-        <td width="33%"><img src = "../../images/gestures/greeting/point_to.jpg" height="130" width="100" id="your_name"><center><font size="-1"><font class="3_order">1</font><br>What's your name?</font></center></td> 
-        <td width="33%"><img src = "../../images/gestures/greeting/self_point.jpg" height="130" width="100" id="my_name"><center><font size="-1"><font class="3_order">1</font><br>My name is ...</font></center></td>
-        <td width="33%"><img src = "../../images/gestures/greeting/c_u_1.jpg" height="130" width="100" class = "2gstr_sign"><center><font size="-1"><font class="order">1</font><br>See you.</font></center></td> 
-      </tr>
-        
-      --->
+      <!--Right arrow-->
+      <td width="20%"><img src = "../../images/right_arrow.png" height="70" width="40" id="rightArrow">
+      </td> 
+    </tr>
     </table>
-	
-	<!-- creating a div to hold the image number-->
-	<div id = 'image_number' style = "position:absolute; top: 19%; left: 62%">
-	<font size="100"><font class="order"></font><br>1</font></center>
-	</div>
-	  
+    <!--------------------------------------> 
   </td>
   </tr>          
             
