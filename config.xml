@@ -54,6 +54,13 @@
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="4.0.0" />
     <gap:plugin name="cordova-plugin-media" source="npm" version="2.4.0" />
     <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.5.0" />
+    
+    <gap:config-file platform="android" parent="/manifest" mode="delete">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  
+    </gap:config-file>
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
