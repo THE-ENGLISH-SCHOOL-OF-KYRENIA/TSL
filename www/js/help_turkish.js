@@ -19,6 +19,13 @@ $(document).ready(function(){
     else {
       imageIndex = 1; 
     }
+      
+    this.style.height="57px";
+    
+    setTimeout(function(){ 
+      $('#rightArrow').height(70);
+    }, 400);
+      
   });
     
   $("#leftArrow").click(function(){
@@ -28,6 +35,11 @@ $(document).ready(function(){
      else {
       imageIndex = 7;
     }
+    this.style.height="57px";
+    
+    setTimeout(function(){ 
+      $('#leftArrow').height(70);
+    }, 400);
   });
   //--------------------------
 

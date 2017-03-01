@@ -1,7 +1,14 @@
 $(document).ready(function(){
   
+  var pos = $("#imageHolder").position(); 
+  $('#order').css('left', pos.left + 20);
+  $( window ).resize(function() {
+    //adjusting the position of the order number relative to the image
+    var pos = $("#imageHolder").position(); 
+    $('#order').css('left', pos.left + 20);
+  }); 
+    
   imageIndex = 1;
-  
   //Tracking the button clicks
   //--------------------------
   $("#rightArrow").click(function(){
@@ -11,6 +18,13 @@ $(document).ready(function(){
     else {
       imageIndex = 1; 
     }
+      
+    this.style.height="57px";
+    
+    setTimeout(function(){ 
+      $('#rightArrow').height(70);
+    }, 400);
+         
   });
     
   $("#leftArrow").click(function(){
@@ -20,12 +34,22 @@ $(document).ready(function(){
      else {
       imageIndex = 6; 
     }
+      
+    this.style.height="57px";
+    
+    setTimeout(function(){ 
+      $('#leftArrow').height(70);
+    }, 400);
+      
+      
   });
   //--------------------------
 
   //Controls the images on the page   
   function imageChanger(){ 
     
+    
+      
     link = $("#imageHolder").attr("src");
      
     //Gesture - hello
