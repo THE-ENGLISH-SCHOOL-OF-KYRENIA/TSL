@@ -3,3 +3,64 @@
   height:20%; 
 }
 
+a.rightArrow{
+  margin-left:-20px;
+  position: fixed;
+  background: green;
+  display:inline-block;
+  padding:0px;
+  color:#fff;
+  text-decoration:none;
+  
+}
+
+a.leftArrow{ 
+  margin-left:-20px;
+  position: fixed;
+  background: green;
+  display:inline-block;
+  padding:0px;
+  color:#fff;
+  text-decoration:none;
+}
+
+a:active.leftArrow{
+  background:black;   
+}
+
+a:active.rightArrow{
+  background:black;   
+}
+
+a.rightArrow:after{
+  position:absolute;
+  top:0%;
+  left:100%;
+  content:'';
+  width:0;
+  height:0;
+  border-left:20px solid green;
+  border-right:20px solid transparent;
+  border-bottom:20px solid transparent;
+  border-top:20px solid transparent;
+}
+
+a.leftArrow:after{
+  position:absolute;
+  top:0%;
+  left:100%;
+  content:'';
+  width:0;
+  height:0;
+  border-left:20px solid transparent;
+  border-right:20px solid green;
+  border-bottom:20px solid transparent;
+  border-top:20px solid transparent;
+}
+
+a:active.rightArrow:after{
+  border-left-color: red;
+}
+a:active.leftArrow:after{
+  border-right-color: red;
+}

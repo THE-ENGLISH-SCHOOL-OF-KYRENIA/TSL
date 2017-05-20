@@ -36,6 +36,9 @@
         else if(number>=30 && number <= 100){
           number -= 10
         }
+        else{
+          number=100;
+        }
       });
         
       $("#r_arr").click(function(){
@@ -50,9 +53,9 @@
         }
       });
         
-      $(".teaching_nums").click(function() {
-        $(".digits").text(number);    
-          
+       $(".number_table").click(function() {
+        $(".digits").text(number);
+                
       });
         
     });
@@ -104,23 +107,24 @@
       </table>
         
       
-      <!--buttons for letters control-->
-      
-      <div class = "teaching_nums">
-        <center>
-        <img id = "l_arr" src="../../images/left_arrow.png" height="50px" width="50px">
-        &nbsp&nbsp&nbsp
-        <img id = "r_arr" src="../../images/right_arrow.png" height="50px" width="50px">
-        </center>
-      </div>  
+      <!--center of the screen. Where the numbers are learn-->
       
       <table class="number_table" >
       <tr>
-        <td style = "width:33.3%;"><div class="digits">11</div></td>
-        <td style = "width:33.3%;"><div class="equality">=</div></td>
-        <td style = "width:33.3%;"><div class="gestures"><img src="../../images/gestures/numbers/11a.jpg" width="130px" height="130px"></div></td>
+        <td style = "width:33.3%;"><br><br><br><br><div class="digits">11</div></td>
+        <td style = "width:33.3%;">
+            
+        <div class="equality">
+            
+          <a id = "l_arr" href="#" class="leftArrow" ></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a id = "r_arr" href="#" class="rightArrow"></a><br>
+          =
+        </div></td>
+          
+        <td style = "width:33.3%;" ><br><br><br><br><div class="gestures"><img src="../../images/gestures/O.jpg" width="110px" height="110px"></div></td>
       </tr>
-      </table>      
+      </table>    
       
           
   </td>

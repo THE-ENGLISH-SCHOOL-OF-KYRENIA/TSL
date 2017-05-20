@@ -1,5 +1,14 @@
-/*this css file has general style related to teaching numbers procedure*/
+/*This is a css file containing the style for the direction page */
 
+#main_text{
+  overflow-y: auto;
+  height:40%;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  width:100%;
+}
 
 a.rightArrow{
   margin-left:-20px;
@@ -61,28 +70,4 @@ a:active.rightArrow:after{
 }
 a:active.leftArrow:after{
   border-right-color: red;
-}
-
-.number_table{
-  width: 100%;
-  height: 30%;
-  text-align: center;
-  position: fixed;
-  top:30%;
-  
-}
-
-.digits{
-  
-  font-size:350%;
-  font-weight: bold;
-  
-}
-
-
-.equality{
-  
-  font-size:350%;
-  font-weight: bold;
-  
 }

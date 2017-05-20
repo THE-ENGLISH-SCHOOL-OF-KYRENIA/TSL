@@ -26,18 +26,36 @@
         
   <!--Javascript teaching numbers in sign language-->
   <!--Javascript teaching numbers in sign language-->
-  <script>    
+ <script>    
       
     $( document ).ready(function() {
       number = 0
         
       $( "#l_arr" ).click(function() {
+        
+        this.style.height="53px";
+    
+        setTimeout(function(){ 
+          $('#l_arr').height(50);
+         }, 200);
+          
+          
         if(number != 0){
           number -= 1; 
+        }
+        else{
+          number=10;
         }
       });
         
       $("#r_arr").click(function(){
+          
+        this.style.height="53px";
+    
+        setTimeout(function(){ 
+          $('#r_arr').height(50);
+         }, 200);
+          
         if(number<10){
         number += 1;  
         }
@@ -46,7 +64,7 @@
         }
       });
         
-      $(".teaching_nums").click(function() {
+      $(".number_table").click(function() {
         $(".digits").text(number);
                 
       });
@@ -101,23 +119,24 @@
       </table>
         
       
-     <!--buttons for letters control-->
+     <!--center of the screen. Where the numbers are learn-->
       
-      <div class = "teaching_nums">
-        <center>
-        <img id = "l_arr" src="../../images/left_arrow.png" height="50px" width="50px">
-        &nbsp&nbsp&nbsp
-        <img id = "r_arr" src="../../images/right_arrow.png" height="50px" width="50px">
-        </center>
-      </div> 
-        
-        <table class="number_table" >
+      <table class="number_table" >
       <tr>
-        <td style = "width:33.3%;"><div class="digits">0</div></td>
-        <td style = "width:33.3%;"><div class="equality">=</div></td>
-        <td style = "width:33.3%;"><div class="gestures"><img src="../../images/gestures/O.jpg" width="130px" height="130px"></div></td>
+        <td style = "width:33.3%;"><br><br><br><br><div class="digits">0</div></td>
+        <td style = "width:33.3%;">
+            
+        <div class="equality">
+            
+          <a id = "l_arr" href="#" class="leftArrow" ></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a id = "r_arr" href="#" class="rightArrow"></a><br>
+          =
+        </div></td>
+          
+        <td style = "width:33.3%;" ><br><br><br><br><div class="gestures"><img src="../../images/gestures/O.jpg" width="110px" height="110px"></div></td>
       </tr>
-      </table>  
+      </table>   
       
           
   </td>

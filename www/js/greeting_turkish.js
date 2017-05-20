@@ -11,9 +11,9 @@ $(document).ready(function(){
     
   imageIndex = 1;
   
-  //Tracking the button clicks
+ //Tracking the button clicks
   //--------------------------
-  $("#rightArrow").click(function(){
+  $(".rightArrow").click(function(){
     if(imageIndex<6){
       imageIndex += 1;  
     }
@@ -29,18 +29,14 @@ $(document).ready(function(){
          
   });
     
-  $("#leftArrow").click(function(){
+  $(".leftArrow").click(function(){
     if(imageIndex>0){
       imageIndex -= 1;
     }
      else {
       imageIndex = 6; 
-    }
-    this.style.height="57px";
-    
-    setTimeout(function(){ 
-      $('#leftArrow').height(70);
-    }, 400);
+    }   
+      
   });
   //--------------------------
 

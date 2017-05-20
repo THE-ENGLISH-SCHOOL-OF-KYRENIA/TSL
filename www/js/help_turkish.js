@@ -12,7 +12,7 @@ $(document).ready(function(){
   
   //Tracking the button clicks
   //--------------------------
-  $("#rightArrow").click(function(){
+  $(".rightArrow").click(function(){
     if(imageIndex<7){
       imageIndex += 1;  
     }
@@ -20,26 +20,17 @@ $(document).ready(function(){
       imageIndex = 1; 
     }
       
-    this.style.height="57px";
-    
-    setTimeout(function(){ 
-      $('#rightArrow').height(70);
-    }, 400);
       
   });
     
-  $("#leftArrow").click(function(){
+  $(".leftArrow").click(function(){
     if(imageIndex>1){
       imageIndex -= 1;
     }
      else {
       imageIndex = 7;
     }
-    this.style.height="57px";
     
-    setTimeout(function(){ 
-      $('#leftArrow').height(70);
-    }, 400);
   });
   //--------------------------
 

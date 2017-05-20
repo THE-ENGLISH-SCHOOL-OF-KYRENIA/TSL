@@ -12,19 +12,13 @@ $(document).ready(function(){
   
   //Tracking the button clicks
   //--------------------------
-  $("#rightArrow").click(function(){
+  $(".rightArrow").click(function(){
     if(imageIndex<7){
       imageIndex += 1;  
     }
     else {
       imageIndex = 1; 
-    }
-      
-    this.style.height="57px";
-    
-    setTimeout(function(){ 
-      $('#rightArrow').height(70);
-    }, 400);
+    }    
       
   });
     
@@ -35,11 +29,7 @@ $(document).ready(function(){
      else {
       imageIndex = 7;
     }
-    this.style.height="57px";
-    
-    setTimeout(function(){ 
-      $('#leftArrow').height(70);
-    }, 400);
+
   });
   //--------------------------
 
