@@ -7,14 +7,18 @@ function show_name(name){
         window.setTimeout(
           (function (i){ 
             return function() {
-			  
+			 
+			 
+			 
               if(name[i].toUpperCase() == "Ö"  ){ 
                 $("#sign").attr("src","../images/gestures/O-1.jpg")
                 setTimeout(function(){            
                   $("#sign").attr("src","../images/gestures/O-2.jpg") 
                 }, 1000);         
               } 
-                                
+                
+              
+                
               else if(name[i].toUpperCase() == "Y"){
                 $("#sign").attr("src","../images/gestures/Y.jpg")
                 setTimeout(function(){          
@@ -57,10 +61,7 @@ function show_name(name){
                                 
               else if( name[i] == " "){}
 			  
-			  else if( name[i].toUpperCase() != "A" or "B" or "C" or "Ç" or "D" or "E" or "F" or "G" or "Ğ" or "H" or "I" or "İ" or "J" or "K" or "L" or "M" "N" "O" or "Ö" or "P" or "R" or "S" or "Ş" or "T" or "U" or "Ü" or "V" or "Y" or "Z"){
-				 $("#warning_message").html("please use lettters for your name")
-			  }
-			  
+			
               else{
                 $("#sign").attr("src","../images/gestures/" + name[i].toUpperCase() +".jpg"); 
               }                   
@@ -75,7 +76,7 @@ function show_name(name){
                   location.reload();
                 },2000);
               }
-                                                
+                                             
             }
         })(i),i * 4000)
     }
