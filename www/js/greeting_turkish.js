@@ -30,7 +30,7 @@ $(document).ready(function(){
   });
     
   $(".leftArrow").click(function(){
-    if(imageIndex>0){
+    if(imageIndex>1){
       imageIndex -= 1;
     }
      else {

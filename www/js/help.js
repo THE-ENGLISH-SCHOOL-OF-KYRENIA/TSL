@@ -22,7 +22,7 @@ $(document).ready(function(){
       
   });
     
-  $("#leftArrow").click(function(){
+  $(".leftArrow").click(function(){
     if(imageIndex>1){
       imageIndex -= 1;
     }
