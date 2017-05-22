@@ -14,15 +14,15 @@ $(document).ready(function(){
     window.refreshIntervalId = setInterval(function(){
       current_image = $("#weather_gesture").attr("src");
       
-      if(weather.indexOf("love") != -1){ //I love
-        if(current_image.indexOf("love_1") != -1){
-          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/love_2.jpg"); 
+      if(weather.indexOf("mist") != -1){ //I love
+        if(current_image.indexOf("mist_1") != -1){
+          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/mist_2.jpg"); 
         }
-        else if(current_image.indexOf("love_2") != -1){
-          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/love_3.jpg"); 
+        else if(current_image.indexOf("mist_2") != -1){
+          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/mist_3.jpg"); 
         }
         else{
-          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/love_1.jpg");
+          current_image = $("#weather_gesture").attr("src", "../../images/gestures/weather/mist_1.jpg");
         }
        }
         
