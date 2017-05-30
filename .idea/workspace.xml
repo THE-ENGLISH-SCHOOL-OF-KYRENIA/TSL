@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed6129d2-e411-4c77-bd0a-a1dd03516632" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/icon-512.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/icon.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-40@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-40@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-50.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-50@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-60@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-60@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-72@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-76@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-83.5@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-small@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon-small@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/ios/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-667h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-736h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-Landscape-736h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/splash/ios/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon/icon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-    </list>
+    <list default="true" id="ed6129d2-e411-4c77-bd0a-a1dd03516632" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -229,12 +196,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496056046959</updated>
-      <workItem from="1496056050374" duration="633000" />
+      <workItem from="1496056050374" duration="897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="633000" />
+    <option name="totallyTimeSpent" value="897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="6" />
