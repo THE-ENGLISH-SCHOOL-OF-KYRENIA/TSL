@@ -83,10 +83,12 @@ $(document).ready(function(){
   //variable that contains the score
   var score = 5;
     
+  allow_click = 1; //this variable prevents unnecessary clicks
+    
   //this piece of code makes sure that the answers chosen are correct    
   $(".btn").click(function(){
       
-    if(question == 1){
+    if(question == 1 && allow_click== 1){
       
       if( $(this).attr('id') != "btn3"){
         $(this).css("background", "red")
@@ -96,27 +98,29 @@ $(document).ready(function(){
       $("#btn3").css("background", "green");
     
       
+      allow_click = 0; //do not allow any click before the next quiz phase is ready
         
       //moves to the second question of the quiz
       setTimeout(second_question, 2000);
         
     }
       
-    else if(question == 2){
+    else if(question == 2 && allow_click== 1){
       if( $(this).attr('id') != "btn4"){
         $(this).css("background", "red")
         score-=1;
       }   
       
       $("#btn4").css("background", "green");
-    
         
+      allow_click = 0; //do not allow any click before the next quiz phase is ready
+     
       //moves to the third question of the quiz
       setTimeout(third_question, 2000);  
         
     }
       
-    else if(question == 3){
+    else if(question == 3 && allow_click== 1){
         
       if( $(this).attr('id') != "btn1"){
         $(this).css("background", "red")
@@ -125,12 +129,14 @@ $(document).ready(function(){
       
       $("#btn1").css("background", "green");
         
+      allow_click = 0; //do not allow any click before the next quiz phase is ready
+        
       //moves to the third question of the quiz
       setTimeout(fourth_question, 2000);  
         
     }
       
-    else if(question == 4){
+    else if(question == 4 && allow_click== 1){
         
       if( $(this).attr('id') != "btn3"){
         $(this).css("background", "red")
@@ -139,12 +145,14 @@ $(document).ready(function(){
       
       $("#btn3").css("background", "green");
         
+       allow_click = 0; //do not allow any click before the next quiz phase is ready
+        
       //moves to the third question of the quiz
       setTimeout(fifth_question, 2000);  
         
     }
       
-    else if(question == 5){
+    else if(question == 5 && allow_click== 1){
         
       if( $(this).attr('id') != "btn2"){
         $(this).css("background", "red")
@@ -152,6 +160,8 @@ $(document).ready(function(){
       }   
       
       $("#btn2").css("background", "green");
+        
+      allow_click = 0; //do not allow any click before the next quiz phase is ready
         
       //moves to the third question of the quiz
       setTimeout(end, 2000);  
@@ -183,6 +193,7 @@ $(document).ready(function(){
       $("#btn3").text("Wind");
       $("#btn4").text("Ambulance");
         
+      allow_click=1;
       question = 2;
     }
     
@@ -205,7 +216,8 @@ $(document).ready(function(){
       $("#btn2").text("See you");
       $("#btn3").text("Hi");
       $("#btn4").text("Hot");
-        
+      
+      allow_click=1;  
       question = 3;
     }
       
@@ -228,6 +240,8 @@ $(document).ready(function(){
       $("#btn3").text("See you");
       $("#btn4").text("Brown");
         
+        
+      allow_click=1;        
       question = 4;
     }
       
@@ -249,7 +263,8 @@ $(document).ready(function(){
       $("#btn2").text("How are you?");
       $("#btn3").text("Fire");
       $("#btn4").text("Phone");
-        
+       
+      allow_click=1;
       question = 5;
     }
       
