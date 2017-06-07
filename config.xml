@@ -108,6 +108,15 @@
         <splash height="1136" src="res/screen/ios/screen-xhdpi-landscape.png" width="640" />
         <splash height="1334" src="res/screen/ios/screen-xhdpi-portrait.png" width="750" />
         
+        
+        
+ 
+
+
+  
+  
+
+        
     </platform>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
