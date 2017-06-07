@@ -97,8 +97,9 @@
         <icon height="58" src="resources/icon/ios/icon-small@2x.png" width="58" />
         <icon height="87" src="resources/icon/ios/icon-small@3x.png" width="87" />
         
+        <splash src="res/screen/ios/screen-hdpi-portrait.png" />
         
-         <splash height="480" src="res/screen/ios/screen-hdpi-landscape.png" width="320" />
+        <splash height="480" src="res/screen/ios/screen-hdpi-landscape.png" width="320" />
         <splash height="960" src="res/screen/ios/screen-hdpi-portrait.png" width="640" />
         <splash height="1024" src="res/screen/ios/screen-ldpi-landscape.png" width="768" />
         <splash height="2048" src="res/screen/ios/screen-ldpi-portrait.png" width="1536" />
